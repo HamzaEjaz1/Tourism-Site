@@ -1,0 +1,26 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body::-webkit-scrollbar {
+    width: 8px;
+    cursor:crosshair;
+  }
+   
+  body::-webkit-scrollbar-track {
+    box-shadow: inset 0 0 6px rgba(0, 0, 0, 0);
+  }
+   
+  body::-webkit-scrollbar-thumb {
+    background-color: rgb(205, 205, 205);
+    outline: 1px solid slategrey;
+  }
+  .custom {
+    /* The second value here is a fallback. */
+    cursor: url(assets/borabora2.jpg), auto;
+  
+    /* You may need coordinates to adjust the pointer
+       for example, the custom cursor is circular and you want
+       the middle to be where you click */
+    cursor: url(assets/borabora.jpg) 15 15, move;
+  }
